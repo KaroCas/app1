@@ -10,5 +10,16 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  irMascotas(){
+    this.navCtrl.push('MascotasPage');
+  }
+
+  irLogin(){
+    this.navCtrl.push('LoginPage');
+  }
+  
+  irNosotros(){
+    this.navCtrl.push('NosotrosPage');
+  }
 
 }
