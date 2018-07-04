@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 /**
  * Generated class for the MascotasPage page.
  *
@@ -14,12 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'mascotas.html',
 })
 export class MascotasPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+ 
+  public tap: number = 0;
+  constructor(public navCtrl: NavController, public navParams: NavParams ) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MascotasPage');
-  }
-
+  tapEvent(e) {
+    this.tap++
+}
+  
 }

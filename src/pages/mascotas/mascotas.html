@@ -15,7 +15,7 @@
 
 <ion-content padding class="fondo">
 
-    <ion-card>
+    <ion-card >
         <img src="/assets/imgs/perrito1.jpg"/>
         <ion-card-content>
           <ion-card-title>
@@ -26,6 +26,14 @@
             responsible for bringing the music to a mass audience.
           </p>
         </ion-card-content>
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small (tap)="tapEvent($event)">
+                <ion-icon name="thumbs-up" ></ion-icon>
+                <div>{{tap}} Likes</div>
+              </button>
+            </ion-col>
+          </ion-row>
       </ion-card>
 
       <ion-card>
